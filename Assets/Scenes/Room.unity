@@ -7899,7 +7899,7 @@ FixedJoint:
   m_BreakTorque: Infinity
   m_EnableCollision: 0
   m_EnablePreprocessing: 1
-  m_MassScale: 1
+  m_MassScale: 100
   m_ConnectedMassScale: 1
 --- !u!54 &1436364280
 Rigidbody:
