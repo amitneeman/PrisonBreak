@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class DoorController : MonoBehaviour
@@ -35,15 +36,22 @@ public class DoorController : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            List<string> inventory = other.GetComponent<Player>().inventory;
-            if (inventory.IndexOf("LockPick") == -1)
+            if (CrossSceneData.flags.ContainsKey("picked"))
             {
-                displayMessage("You need to find a lock pick");
+                displayMessage("press 1 to open the door");
             }
             else
             {
-                playerAbleToPick = true;
-                displayMessage("Press 1 to pick the lock");
+                List<string> inventory = other.GetComponent<Player>().inventory;
+                if (inventory.IndexOf("LockPick") == -1)
+                {
+                    displayMessage("You need to find a lock pick");
+                }
+                else
+                {
+                    playerAbleToPick = true;
+                    displayMessage("Press 1 to pick the lock");
+                }
             }
         }
     }
@@ -57,11 +65,20 @@ public class DoorController : MonoBehaviour
 
     private void Update()
     {
-        if (playerAbleToPick && Input.GetKeyDown("1"))
+        if (CrossSceneData.flags.ContainsKey("picked") && Input.GetKeyDown("1"))
         {
-            Debug.Log("Move to the picking scene");
             OpenDoor();
         }
+        else
+        {
+            if (playerAbleToPick && Input.GetKeyDown("1"))
+            {
+                SceneManager.LoadScene(3);
+            }
+        }
+
+
+
     }
 
     void OpenDoor()

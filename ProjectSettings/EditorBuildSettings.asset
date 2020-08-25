@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Freedom.unity
     guid: 631e173f4f95a471784c0a577b0e1807
+  - enabled: 1
+    path: Assets/Scenes/2dDoorPuzzle.unity
+    guid: c3896217d18b3c144b48ef40a01f5e99
   m_configObjects: {}

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Canon
   - Boat
+  - LockObjective
   layers:
   - Default
   - TransparentFX
@@ -40,6 +41,21 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background
+    uniqueID: 883051765
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 1
+  - name: Player
+    uniqueID: 3822092437
+    locked: 0
+  - name: Objective
+    uniqueID: 2037082387
+    locked: 0
+  - name: Lock
+    uniqueID: 3067638837
+    locked: 1
+  - name: Points
+    uniqueID: 3288357333
     locked: 0
