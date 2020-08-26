@@ -46,7 +46,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
-    locked: 1
+    locked: 0
   - name: Player
     uniqueID: 3822092437
     locked: 0
@@ -55,7 +55,7 @@ TagManager:
     locked: 0
   - name: Lock
     uniqueID: 3067638837
-    locked: 1
+    locked: 0
   - name: Points
     uniqueID: 3288357333
     locked: 0
