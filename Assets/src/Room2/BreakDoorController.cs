@@ -16,14 +16,17 @@ public class BreakDoorController : MonoBehaviour
     {
         if (other.gameObject.tag == "Canon")
         {
-            Destroy(this.gameObject);
+            this.GetComponent<MeshRenderer>().enabled = false;
+            this.GetComponent<BoxCollider>().enabled = false;
             this.brokenDoor.SetActive(true);
+            StartCoroutine(DestroyLeftOvers());
         }
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator DestroyLeftOvers()
     {
-
+        yield return new WaitForSeconds(5);
+        Destroy(this.brokenDoor.gameObject);
+        Destroy(this.gameObject);
     }
 }
