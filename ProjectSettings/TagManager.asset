@@ -7,6 +7,7 @@ TagManager:
   - Canon
   - Boat
   - LockObjective
+  - WayPoint
   layers:
   - Default
   - TransparentFX
