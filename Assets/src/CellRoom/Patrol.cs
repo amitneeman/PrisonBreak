@@ -4,33 +4,24 @@ using UnityEngine;
 
 public class Patrol : MonoBehaviour
 {
-    public float speed;
-    public Transform[] moveSpots;
-    private int randomSpot;
-    private float waitTime;
-    public float startWaitTime;
-    // Start is called before the first frame update
-    void Start()
-    {
-        randomSpot = Random.Range(0,moveSpots.Length);
-    }
-
-    // Update is called once per frame
+    public Transform[] waypoint;
+    public float speed = 5;
+    int currentWayPoint;
+    Vector3 target, moveDirection;
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, moveSpots[randomSpot].position, speed * Time.deltaTime);
-        if (Vector2.Distance(transform.position,moveSpots[randomSpot].position)<0.2f) {
-            if (waitTime <= 0)
-            {
-                randomSpot = Random.Range(0, moveSpots.Length);
-                waitTime = startWaitTime;
-            }
-            else {
-                waitTime -= Time.deltaTime;
-            }
+        target = waypoint[currentWayPoint].position;
+        moveDirection = target - transform.position;
+        if (moveDirection.magnitude < 1)
+        {
+            currentWayPoint =
+            ++currentWayPoint % waypoint.Length;
         }
+
+        GetComponent<Rigidbody>().velocity =
+        moveDirection.normalized * speed;
     }
-    
+
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Player") {
