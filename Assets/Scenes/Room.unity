@@ -2814,8 +2814,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a15c2196e0654f34bb4c3180b264902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redFloor: {fileID: 0}
-  grayFloor: {fileID: 0}
+  redFloor: {fileID: 2100000, guid: 9af035b0f8eb14639a0f5d4e4906eead, type: 2}
+  grayFloor: {fileID: 2100000, guid: 78e983565f5674bb998d2b78a1e6ebe3, type: 2}
 --- !u!64 &213589569
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -3489,7 +3489,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 274004438}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.8912983, y: -1.2020001, z: -7.381}
+  m_LocalPosition: {x: -5.8912983, y: -1.2020001, z: -9.59}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 529673585}
@@ -8242,8 +8242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a15c2196e0654f34bb4c3180b264902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redFloor: {fileID: 0}
-  grayFloor: {fileID: 0}
+  redFloor: {fileID: 2100000, guid: 9af035b0f8eb14639a0f5d4e4906eead, type: 2}
+  grayFloor: {fileID: 2100000, guid: 78e983565f5674bb998d2b78a1e6ebe3, type: 2}
 --- !u!64 &635681287
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -9807,7 +9807,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 792173687}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8.82, y: -1.2020001, z: -7.488}
+  m_LocalPosition: {x: 8.82, y: -1.2020001, z: -3.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 529673585}
@@ -12425,7 +12425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7cc6d4dcd62f409283d49c9834c7688, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DoorsAnimator: {fileID: 0}
+  DoorsAnimator: {fileID: 186740394}
 --- !u!65 &1042419355
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -21912,15 +21912,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.12
+      value: -11.21
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.59
+      value: 2.94
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.49
+      value: -10.8
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: c6453f8e1f814744d8b94e5a6d1f9942, type: 3}
       propertyPath: m_LocalRotation.x
@@ -24195,8 +24195,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9a15c2196e0654f34bb4c3180b264902, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  redFloor: {fileID: 0}
-  grayFloor: {fileID: 0}
+  redFloor: {fileID: 2100000, guid: 9af035b0f8eb14639a0f5d4e4906eead, type: 2}
+  grayFloor: {fileID: 2100000, guid: 78e983565f5674bb998d2b78a1e6ebe3, type: 2}
 --- !u!1 &1979964477
 GameObject:
   m_ObjectHideFlags: 0
