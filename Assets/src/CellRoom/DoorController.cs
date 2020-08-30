@@ -68,6 +68,7 @@ public class DoorController : MonoBehaviour
         if (CrossSceneData.flags.ContainsKey("picked") && Input.GetKeyDown("1"))
         {
             OpenDoor();
+            ScoreScript.scoreValue += 30;
         }
         else
         {

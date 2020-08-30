@@ -27,6 +27,7 @@ public class Patrol : MonoBehaviour
         if (collision.gameObject.tag == "Player") {
             Rigidbody rb = collision.gameObject.GetComponent<Rigidbody>();
             rb.MovePosition(new Vector3((float)-7.7,(float)5.61,(float)-18.1));
+            ScoreScript.scoreValue -= 5;
         }
     }
     

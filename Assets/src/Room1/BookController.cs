@@ -58,6 +58,7 @@ public class BookController : MonoBehaviour
         {
             Destroy(this.hintLight.gameObject);
             Destroy(this.hintMessage.gameObject);
+            ScoreScript.scoreValue += 30;
             MoveBook();
             StartCoroutine(OpenDoor());
         }

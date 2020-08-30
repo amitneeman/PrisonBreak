@@ -52,6 +52,7 @@ public class LockPickController : MonoBehaviour
         if (this.isPlayerAbleToPickUp && Input.GetKeyDown("1"))
         {
             this.Player.GetComponent<Player>().inventory.Add("LockPick");
+            ScoreScript.scoreValue += 50;
             Destroy(this.hintLight.gameObject);
             Destroy(this.hintMessage.gameObject);
             Destroy(this.Key.gameObject);
